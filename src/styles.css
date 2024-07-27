@@ -1,0 +1,26 @@
+.loader,
+.error,
+.cat-info {
+  display: none;
+}
+
+.loader.active,
+.error.active,
+.cat-info.active {
+  display: block;
+}
+
+.loader {
+  font-size: 20px;
+  color: #555;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.cat-info img {
+  max-width: 100%;
+  height: auto;
+}
