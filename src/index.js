@@ -7,11 +7,11 @@ const catInfo = document.querySelector('.cat-info');
 
 error.style.display = 'none';
 loader.style.display = 'none';
+catInfo.style.display = 'none';
 
 async function populateBreeds() {
   try {
     loader.style.display = 'block';
-    breedSelect.style.display = 'none';
     const breeds = await fetchBreeds();
     breedSelect.innerHTML = breeds.map(breed => `<option value="${breed.id}">${breed.name}</option>`).join('');
     new SlimSelect({ select: '.breed-select' });
